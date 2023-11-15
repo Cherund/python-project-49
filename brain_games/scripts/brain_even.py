@@ -22,11 +22,13 @@ def main():
             print('Correct!')
             result += 1
         else:
-            print(f"'{player_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n"
-                  f"Let's try again, {name}!")
-            result = 0
+            break
 
-    print(f'Congratulations, {name}!')
+    if result < 3:
+        print(f"'{player_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\n"
+              f"Let's try again, {name}!")
+    else:
+        print(f'Congratulations, {name}!')
 
 
 if __name__ == '__main__':
