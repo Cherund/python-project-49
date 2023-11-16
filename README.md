@@ -3,6 +3,9 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/df95b9c570df11ee5a2e/maintainability)](https://codeclimate.com/github/Cherund/python-project-49/maintainability)
 
-##### Asciinema
+#### Asciinema
+Installing package and demonstating brain-even 
 https://asciinema.org/a/UKhbQmgX2UBFfZr0QuDlE4Vw7
+Demonstrating brain-calc
+https://asciinema.org/a/WHaIqQ8i5jymJWg5pKGPtvwxp
 
