@@ -5,7 +5,7 @@ from brain_games.cli import welcome_user, game_end
 
 def even():
     name = welcome_user()
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     result = 0
     while result < 3:
         number = randint(3, 99)
