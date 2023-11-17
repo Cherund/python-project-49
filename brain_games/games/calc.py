@@ -18,11 +18,11 @@ def calc():
         number1 = randint(2, 99)
         number2 = randint(2, 99)
         operation = choice(['*', '+', '-'])
-        correct_answer = ops[operation](number1, number2)
+        correct_answer = str(ops[operation](number1, number2))
 
         print(f'Question: {number1} {operation} {number2}')
         player_answer = string('Your answer: ')
-        if player_answer.strip() == str(correct_answer):
+        if player_answer.strip() == correct_answer:
             print('Correct!')
             result += 1
         else:
