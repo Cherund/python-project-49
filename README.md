@@ -9,7 +9,7 @@ https://asciinema.org/a/UKhbQmgX2UBFfZr0QuDlE4Vw7
 ##### Demonstrating brain-calc
 https://asciinema.org/a/WHaIqQ8i5jymJWg5pKGPtvwxp
 ##### Demonstrating brain gcd
-https://asciinema.org/a/bNwerhRahaxahr6X3VlcfDRXw
+https://asciinema.org/a/3acn2Zd59iMXYT3jpusAUOCri
 ##### Demonstrating brain progression
 https://asciinema.org/a/IwH1pNCKLfLZOFRvgUdWwvI6M
 ##### Demonstrating brain prime

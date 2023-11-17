@@ -9,7 +9,6 @@ def gcd():
     result = 0
     while result < 3:
         number_list = [randint(2, 99), randint(2, 99)]
-        print(number_list)
         number_list.sort()
 
         for divisor in range(number_list[0], 0, -1):
