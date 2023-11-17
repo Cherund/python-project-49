@@ -29,5 +29,3 @@ def progression():
             break
 
     game_end(player_answer, correct_answer, result, name)
-
-
