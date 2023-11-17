@@ -5,7 +5,7 @@ from brain_games.cli import welcome_user, game_end
 
 def prime():
     name = welcome_user()
-    print('Answer "yes" if given number is prime, otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
     result = 0
     while result < 3:
         number = randint(5, 101)
