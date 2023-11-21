@@ -1,4 +1,4 @@
-from brain_games.cli import welcome_user, game_end, answer_check
+from brain_games.cli import welcome_user
 from brain_games.games.calc import calc
 from brain_games.games.even import even
 from brain_games.games.gcd import gcd
@@ -21,6 +21,23 @@ GAMES_FUNCTIONS = {
     'prime': prime,
     'progression': progression,
 }
+
+
+def answer_check(player_answer, correct_answer, turns):
+    if player_answer.lower().strip() == correct_answer:
+        print('Correct!')
+        return turns - 1
+    else:
+        return False
+
+
+def game_end(player_answer, correct_answer, turns, name):
+    if isinstance(turns, bool):
+        print(f"'{player_answer}' is wrong answer ;(. "
+              f"Correct answer was '{correct_answer}'.\n"
+              f"Let's try again, {name}!")
+    else:
+        print(f'Congratulations, {name}!')
 
 
 def engine(game_name):
