@@ -1,8 +1,7 @@
-from random import randint
+from brain_games.utils import random_number
 
-
-def gcd():
-    number_list = [randint(2, 99), randint(2, 99)]
+def greatest_common_divider():
+    number_list = [random_number(), random_number()]
     number_list.sort()
 
     for divisor in range(number_list[0], 0, -1):

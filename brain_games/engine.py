@@ -1,53 +1,22 @@
-from brain_games.cli import welcome_user
-from brain_games.games.calc import calc
-from brain_games.games.even import even
-from brain_games.games.gcd import gcd
-from brain_games.games.prime import prime
-from brain_games.games.progression import progression
 from prompt import string
-
-GAMES_LINES = {
-    'calc': "What is the result of the expression?",
-    'even': 'Answer "yes" if the number is even, otherwise answer "no".',
-    'gcd': "Find the greatest common divisor of given numbers.",
-    'prime': 'Answer "yes" if given number is prime. Otherwise answer "no".',
-    'progression': "What number is missing in the progression?",
-}
-
-GAMES_FUNCTIONS = {
-    'calc': calc,
-    'even': even,
-    'gcd': gcd,
-    'prime': prime,
-    'progression': progression,
-}
+from brain_games.constants import TURNS
 
 
-def answer_check(player_answer, correct_answer, turns):
-    if player_answer.lower().strip() == correct_answer:
-        print('Correct!')
-        return turns - 1
-    else:
-        return False
+def engine(greeting_message, game_function):
+    print('Welcome to the Brain Games!')
+    name = string('May I have your name? ')
+    print(f'Hello, {name}!\n'
+          f'{greeting_message}')
 
-
-def game_end(player_answer, correct_answer, turns, name):
-    if isinstance(turns, bool):
-        print(f"'{player_answer}' is wrong answer ;(. "
-              f"Correct answer was '{correct_answer}'.\n"
-              f"Let's try again, {name}!")
-    else:
-        print(f'Congratulations, {name}!')
-
-
-def engine(game_name):
-    name = welcome_user()
-    print(GAMES_LINES[game_name])
-
-    turns = 3
-    while turns > 0:
-        correct_answer = GAMES_FUNCTIONS[game_name]()
+    for _ in range(TURNS):
+        correct_answer = game_function()
         player_answer = string('Your answer: ')
-        turns = answer_check(player_answer, correct_answer, turns)
+        if player_answer.lower().strip() == correct_answer:
+            print('Correct!')
+        else:
+            print(f"'{player_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.\n"
+                  f"Let's try again, {name}!")
+            return
 
-    game_end(player_answer, correct_answer, turns, name)
+        print(f'Congratulations, {name}!')

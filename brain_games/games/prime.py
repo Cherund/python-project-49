@@ -1,8 +1,8 @@
-from random import randint
+from brain_games.utils import random_number
 
 
 def prime():
-    number = randint(5, 101)
+    number = random_number()
     correct_answer = 'yes'
     for divider in range(2, number // 2):
         if not number % divider:

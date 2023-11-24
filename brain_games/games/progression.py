@@ -1,15 +1,16 @@
-from random import randint
+from brain_games.utils import random_number
+from brain_games.constants import PROGRESSION_LENGTH
 
 
 def progression():
-    step = randint(1, 20)
-    numbers_list = [str(randint(1, 50)), ]
+    step = random_number(1, 20)
+    numbers_list = [str(random_number(1, 50)), ]
 
-    for i in range(9):
+    for i in range(PROGRESSION_LENGTH):
         next_number = int(numbers_list[i]) + step
         numbers_list.append(str(next_number))
 
-    removed_index = randint(0, 9)
+    removed_index = random_number(0, 9)
     correct_answer = numbers_list[removed_index]
     numbers_list[removed_index] = ".."
 

@@ -1,17 +1,9 @@
-from random import randint, choice
-import operator
-
-OPS = {
-    '+': operator.add,
-    '-': operator.sub,
-    '*': operator.mul,
-}
+from brain_games.utils import random_number, choice_of_operator
 
 
-def calc():
-    number1 = randint(2, 99)
-    number2 = randint(2, 99)
-    operation = choice(['*', '+', '-'])
-    correct_answer = str(OPS[operation](number1, number2))
+def calculator():
+    number1, number2 = random_number(), random_number()
+    operation, operation_function = choice_of_operator()
+    correct_answer = str(operation_function(number1, number2))
     print(f'Question: {number1} {operation} {number2}')
     return correct_answer

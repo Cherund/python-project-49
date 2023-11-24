@@ -1,8 +1,8 @@
-from random import randint
+from brain_games.utils import random_number
 
 
 def even():
-    number = randint(3, 99)
+    number = random_number()
     correct_answer = number % 2
     print(f'Question: {number}')
 
