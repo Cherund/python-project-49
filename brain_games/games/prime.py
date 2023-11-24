@@ -1,4 +1,10 @@
+from brain_games.engine import engine
 from brain_games.utils import random_number
+from brain_games.constants import PRIME_GREETING
+
+
+def run_prime():
+    engine(PRIME_GREETING, prime)
 
 
 def prime():

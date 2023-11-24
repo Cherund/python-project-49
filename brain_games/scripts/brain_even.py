@@ -1,10 +1,8 @@
-from brain_games.engine import engine
-from brain_games.games.even import even
-from brain_games.constants import EVEN_GREETING
+from brain_games.games.even import run_even
 
 
 def main():
-    engine(EVEN_GREETING, even)
+    run_even()
 
 
 if __name__ == '__main__':

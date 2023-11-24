@@ -1,5 +1,10 @@
+from brain_games.engine import engine
 from brain_games.utils import random_number
-from brain_games.constants import PROGRESSION_LENGTH
+from brain_games.constants import PROGRESSION_LENGTH, PROGRESSION_GREETING
+
+
+def run_progression():
+    engine(PROGRESSION_GREETING, progression)
 
 
 def progression():

@@ -1,10 +1,8 @@
-from brain_games.engine import engine
-from brain_games.games.calc import calculator
-from brain_games.constants import CALCULATOR_GREETING
+from brain_games.games.calc import run_calculator
 
 
 def main():
-    engine(CALCULATOR_GREETING, calculator)
+    run_calculator()
 
 
 if __name__ == '__main__':

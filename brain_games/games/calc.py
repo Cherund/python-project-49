@@ -1,4 +1,10 @@
+from brain_games.engine import engine
 from brain_games.utils import random_number, choice_of_operator
+from brain_games.constants import CALCULATOR_GREETING
+
+
+def run_calculator():
+    engine(CALCULATOR_GREETING, calculator)
 
 
 def calculator():

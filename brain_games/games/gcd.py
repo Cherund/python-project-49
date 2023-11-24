@@ -1,4 +1,10 @@
+from brain_games.engine import engine
 from brain_games.utils import random_number
+from brain_games.constants import GCD_GREETING
+
+
+def run_greatest_common_divider():
+    engine(GCD_GREETING, greatest_common_divider)
 
 
 def greatest_common_divider():
