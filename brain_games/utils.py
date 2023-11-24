@@ -8,8 +8,3 @@ def random_number(start=2, end=99):
 
 def choice_of_operator():
     return choice(list(OPS.items()))
-
-
-
-
-

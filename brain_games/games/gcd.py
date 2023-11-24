@@ -1,5 +1,6 @@
 from brain_games.utils import random_number
 
+
 def greatest_common_divider():
     number_list = [random_number(), random_number()]
     number_list.sort()
