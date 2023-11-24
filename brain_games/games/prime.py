@@ -10,7 +10,7 @@ def run_prime():
 def prime():
     number = random_number()
     correct_answer = 'yes'
-    for divider in range(2, number // 2):
+    for divider in range(2, (number // 2) + 1):
         if not number % divider:
             correct_answer = 'no'
             break
