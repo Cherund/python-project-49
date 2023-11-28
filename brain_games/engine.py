@@ -1,16 +1,16 @@
-from prompt import string
-from brain_games.constants import TURNS
+from brain_games.utils import request_name_or_answer
+from brain_games.constants import GAME_TURNS
 
 
-def engine(greeting_message, game_function):
+def run_game_engine(game_line, get_answer):
     print('Welcome to the Brain Games!')
-    name = string('May I have your name? ')
+    name = request_name_or_answer()
     print(f'Hello, {name}!\n'
-          f'{greeting_message}')
+          f'{game_line}')
 
-    for _ in range(TURNS):
-        correct_answer = game_function()
-        player_answer = string('Your answer: ')
+    for _ in range(GAME_TURNS):
+        correct_answer = get_answer()
+        player_answer = request_name_or_answer(name=False)
         if player_answer.lower().strip() == correct_answer:
             print('Correct!')
         else:
@@ -19,4 +19,4 @@ def engine(greeting_message, game_function):
                   f"Let's try again, {name}!")
             return
 
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
