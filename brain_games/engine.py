@@ -1,16 +1,18 @@
-from brain_games.utils import request_name_or_answer
+from brain_games.utils import ask_question
 from brain_games.constants import GAME_TURNS
+import prompt
 
 
-def run_game_engine(game_line, get_answer):
+def run_game_engine(instruction, get_question_and_answer):
     print('Welcome to the Brain Games!')
-    name = request_name_or_answer()
+    name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\n'
-          f'{game_line}')
+          f'{instruction}')
 
     for _ in range(GAME_TURNS):
-        correct_answer = get_answer()
-        player_answer = request_name_or_answer(name=False)
+        question, correct_answer = get_question_and_answer()
+        ask_question(question)
+        player_answer = prompt.string('Your answer: ')
         if player_answer.lower().strip() == correct_answer:
             print('Correct!')
         else:
