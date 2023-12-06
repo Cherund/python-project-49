@@ -1,4 +1,4 @@
-from brain_games.engine import run_game_engine
+from brain_games.engine import run_game
 from brain_games.utils import generate_random_number
 from brain_games.constants import PRIME_INSTRUCTION
 
@@ -14,5 +14,5 @@ def check_for_prime():
     return number, correct_answer
 
 
-def run_prime():
-    run_game_engine(PRIME_INSTRUCTION, check_for_prime)
+def run_prime_game():
+    run_game(PRIME_INSTRUCTION, check_for_prime)

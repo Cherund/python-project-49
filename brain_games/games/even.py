@@ -1,4 +1,4 @@
-from brain_games.engine import run_game_engine
+from brain_games.engine import run_game
 from brain_games.utils import generate_random_number
 from brain_games.constants import EVEN_INSTRUCTION
 
@@ -14,5 +14,5 @@ def find_if_even():
     return number, correct_answer
 
 
-def run_even():
-    run_game_engine(EVEN_INSTRUCTION, find_if_even)
+def run_even_game():
+    run_game(EVEN_INSTRUCTION, find_if_even)

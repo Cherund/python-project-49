@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.games.gcd import run_greatest_common_divider
+from brain_games.games.gcd import run_gcd_game
 
 
 def main():
-    run_greatest_common_divider()
+    run_gcd_game()
 
 
 if __name__ == '__main__':

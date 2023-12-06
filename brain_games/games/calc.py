@@ -1,15 +1,16 @@
-from brain_games.engine import run_game_engine
-from brain_games.utils import generate_random_number, choice_of_operator
-from brain_games.constants import CALCULATOR_INSTRUCTION
+from brain_games.engine import run_game
+from brain_games.utils import generate_random_number
+from brain_games.constants import CALCULATOR_INSTRUCTION, OPERATIONS
+import random
 
 
-def calculate():
+def evaluate_equation():
     number1, number2 = generate_random_number(), generate_random_number()
-    operation = choice_of_operator()
-    question = f'{number1} {operation} {number2}'
-    correct_answer = str(eval(question))
-    return question, correct_answer
+    operation = random.choice(OPERATIONS)
+    equation = f'{number1} {operation} {number2}'
+    correct_answer = str(eval(equation))
+    return equation, correct_answer
 
 
-def run_calculator():
-    run_game_engine(CALCULATOR_INSTRUCTION, calculate)
+def run_calc_game():
+    run_game(CALCULATOR_INSTRUCTION, evaluate_equation)
