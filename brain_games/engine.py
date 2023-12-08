@@ -1,6 +1,9 @@
 from brain_games.constants import GAME_TURNS
-from brain_games.utils import strip_to_lower
 import prompt
+
+
+def check_answer(user_answer, correct_answer):
+    return user_answer.strip().lower() == correct_answer.strip().lower()
 
 
 def run_game(instruction, get_question_and_answer):
@@ -13,7 +16,7 @@ def run_game(instruction, get_question_and_answer):
         question, correct_answer = get_question_and_answer()
         print(f'Question: {question}')
         player_answer = prompt.string('Your answer: ')
-        if strip_to_lower(player_answer) == strip_to_lower(correct_answer):
+        if check_answer(player_answer, correct_answer):
             print('Correct!')
         else:
             print(f"'{player_answer}' is wrong answer ;(. "

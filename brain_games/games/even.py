@@ -1,18 +1,18 @@
 from brain_games.engine import run_game
-from brain_games.utils import generate_random_number
+from brain_games.utils import create_random_number
 from brain_games.constants import EVEN_INSTRUCTION
 
 
-def check_if_not_even(number):
-    return number % 2
+def is_even(number):
+    return number % 2 == 0
 
 
-def find_if_even():
-    number = generate_random_number()
-    correct_answer = 'no' if check_if_not_even(number) else 'yes'
+def get_number_and_even_answer():
+    number = create_random_number()
+    correct_answer = 'yes' if is_even(number) else 'no'
 
     return number, correct_answer
 
 
 def run_even_game():
-    run_game(EVEN_INSTRUCTION, find_if_even)
+    run_game(EVEN_INSTRUCTION, get_number_and_even_answer)
