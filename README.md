@@ -37,13 +37,13 @@ Also, you can install package from repository without cloning it locally. Use th
 - `brain-progression` for **Find the missing number in progression**
 
 ### Asciinema
-##### Installing package and demonstrating brain-even
-[![asciicast](https://asciinema.org/a/UKhbQmgX2UBFfZr0QuDlE4Vw7)](https://asciinema.org/a/UKhbQmgX2UBFfZr0QuDlE4Vw7)
 ##### Demonstrating brain-calc
-[![asciicast](https://asciinema.org/a/WHaIqQ8i5jymJWg5pKGPtvwxp)](https://asciinema.org/a/WHaIqQ8i5jymJWg5pKGPtvwxp)
+[![asciicast](https://asciinema.org/a/WHaIqQ8i5jymJWg5pKGPtvwxp.svg)](https://asciinema.org/a/WHaIqQ8i5jymJWg5pKGPtvwxp)
+##### Installing package and demonstrating brain-even
+[![asciicast](https://asciinema.org/a/621034.svg)](https://asciinema.org/a/621034)
 ##### Demonstrating brain gcd
-[![asciicast](https://asciinema.org/a/3acn2Zd59iMXYT3jpusAUOCri)](https://asciinema.org/a/3acn2Zd59iMXYT3jpusAUOCri)
-##### Demonstrating brain progression
-[![asciicast](https://asciinema.org/a/IwH1pNCKLfLZOFRvgUdWwvI6M)](https://asciinema.org/a/IwH1pNCKLfLZOFRvgUdWwvI6M)
+[![asciicast](https://asciinema.org/a/621585.svg)](https://asciinema.org/a/621585)
 ##### Demonstrating brain prime
-[![asciicast](https://asciinema.org/a/TWwQzAnp5lks7tFru1LoHYjsg)](https://asciinema.org/a/TWwQzAnp5lks7tFru1LoHYjsg)
+[![asciicast](https://asciinema.org/a/TWwQzAnp5lks7tFru1LoHYjsg.svg)](https://asciinema.org/a/TWwQzAnp5lks7tFru1LoHYjsg)
+##### Demonstrating brain progression
+[![asciicast](https://asciinema.org/a/IwH1pNCKLfLZOFRvgUdWwvI6M.svg)](https://asciinema.org/a/IwH1pNCKLfLZOFRvgUdWwvI6M)
