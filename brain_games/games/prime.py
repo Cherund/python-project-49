@@ -12,9 +12,9 @@ def is_prime(number):
 
 def get_number_and_prime_answer():
     number = create_random_number()
-    correct_answer = 'yes' if is_prime(number) else 'no'
+    prime_answer = 'yes' if is_prime(number) else 'no'
 
-    return number, correct_answer
+    return number, prime_answer
 
 
 def run_prime_game():

@@ -4,13 +4,7 @@ from brain_games.constants import PROGRESSION_LENGTH, PROGRESSION_INSTRUCTION
 
 
 def create_progression(start, step, progression_length):
-    numbers_list = [start, ]
-
-    for i in range(progression_length):
-        next_number = numbers_list[i] + step
-        numbers_list.append(next_number)
-
-    return numbers_list
+    return [start + step * i for i in range(progression_length)]
 
 
 def get_progression_and_hidden_number():

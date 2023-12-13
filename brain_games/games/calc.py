@@ -4,13 +4,13 @@ from brain_games.constants import CALCULATOR_INSTRUCTION, OPERATIONS
 import random
 
 
-def get_equation_and_result():
+def get_expression_and_result():
     number1, number2 = create_random_number(), create_random_number()
     operation = random.choice(OPERATIONS)
-    equation = f'{number1} {operation} {number2}'
-    correct_answer = str(eval(equation))
-    return equation, correct_answer
+    expression = f'{number1} {operation} {number2}'
+    result = str(eval(expression))
+    return expression, result
 
 
 def run_calc_game():
-    run_game(CALCULATOR_INSTRUCTION, get_equation_and_result)
+    run_game(CALCULATOR_INSTRUCTION, get_expression_and_result)

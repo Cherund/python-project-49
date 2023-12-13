@@ -9,4 +9,4 @@ PRIME_INSTRUCTION = 'Answer "yes" if given number is prime. ' \
                     'Otherwise answer "no".'
 
 GAME_TURNS = 3
-PROGRESSION_LENGTH = 9
+PROGRESSION_LENGTH = 10

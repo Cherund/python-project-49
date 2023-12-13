@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Brain Games"
+description = "\"Brain Games\" is a package of five math based games. You need to answer 3 questions correctly in order to win. Wrong answer will end the game."
 authors = ["Egor Gerimovich <cherund@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/Cherund/python-project-49/"
