@@ -8,8 +8,8 @@ def get_expression_and_result():
     number1, number2 = create_random_number(), create_random_number()
     operation = random.choice(OPERATIONS)
     expression = f'{number1} {operation} {number2}'
-    result = str(eval(expression))
-    return expression, result
+    result = eval(expression)
+    return expression, str(result)
 
 
 def run_calc_game():

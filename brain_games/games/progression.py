@@ -12,10 +12,10 @@ def get_progression_and_hidden_number():
     numbers_list = create_progression(start, step, PROGRESSION_LENGTH)
 
     removed_index = create_random_number(0, 9)
-    hidden_number = str(numbers_list[removed_index])
+    hidden_number = numbers_list[removed_index]
     numbers_list[removed_index] = ".."
 
-    return " ".join(map(str, numbers_list)), hidden_number
+    return " ".join(map(str, numbers_list)), str(hidden_number)
 
 
 def run_progression_game():

@@ -6,9 +6,9 @@ import math
 
 def get_numbers_and_gcd():
     number1, number2 = create_random_number(), create_random_number()
-    gcd = str(math.gcd(number1, number2))
+    gcd = math.gcd(number1, number2)
 
-    return f'{number1} {number2}', gcd
+    return f'{number1} {number2}', str(gcd)
 
 
 def run_gcd_game():
